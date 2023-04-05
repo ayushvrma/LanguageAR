@@ -25,7 +25,6 @@ Install the Flutter SDK and set up your development environment by following the
 Install the required dependencies by running the following command:
 
 ```bash
-Copy code
 flutter pub get
 ```
 Set up your Firebase project by following the instructions on the Firebase website.
@@ -36,6 +35,38 @@ Run the app on your device or emulator by running the following command:
 
 ```bash
 flutter run
+```
+
+## File Structure
+
+```
+lib/
+├── main.dart
+├── screens/
+│   ├── login_screen.dart
+│   ├── registration_screen.dart
+│   ├── language_selection_screen.dart
+│   ├── vocabulary_list_screen.dart
+│   ├── pronunciation_practice_screen.dart
+│   ├── grammar_exercises_screen.dart
+│   └── progress_tracking_screen.dart
+├── widgets/
+│   ├── ar_camera_view.dart
+│   ├── vocabulary_list_item.dart
+│   ├── pronunciation_practice_item.dart
+│   ├── grammar_exercise_item.dart
+│   └── progress_bar.dart
+├── models/
+│   ├── user.dart
+│   └── vocabulary_item.dart
+├── services/
+│   ├── authentication_service.dart
+│   ├── database_service.dart
+│   └── translation_service.dart
+├── utils/
+│   ├── constants.dart
+│   └── helpers.dart
+└── app.dart
 ```
 
 License
